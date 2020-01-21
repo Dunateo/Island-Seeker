@@ -117,6 +117,7 @@ public class UtilisateurController {
         }
 
         c.setPseudo(form.getPseudo());
+        c.setPassword(form.getPassword());
 
         utilis.save(c);
 

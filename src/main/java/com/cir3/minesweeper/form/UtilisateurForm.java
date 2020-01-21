@@ -16,6 +16,10 @@ public class UtilisateurForm {
     @Size(min=2, max = 30)
     private String pseudo;
 
+    @NotNull
+    @Size(min = 4 )
+    private String password;
+
     private Set<Long> partie = new HashSet<>();
 
     public Long getId() {
@@ -40,5 +44,13 @@ public class UtilisateurForm {
 
     public void setPartie(Set<Long> partie) {
         this.partie = partie;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
